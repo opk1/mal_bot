@@ -19,7 +19,7 @@ err_file = open('error_log.txt', 'a')
 #-the name will be extracted and looked up using hummingbird api
 #-data will be formated and a quick snapshot of the anime will be posted as a reply
 #-after the comment has been replied to, the comment id will be stored in a file so
-# that the same comment won't be replied to on start up
+# that the same comment won't be replied to on start up 
 def main():
 	#maximum comment length to reply to
 	MAX_LENGTH = 70
