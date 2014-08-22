@@ -104,12 +104,12 @@ def getData(name):
     try:
         print "fetching " + name + " data..."
         get_data = unirest.get("https://vikhyat-hummingbird-v2.p.mashape.com/anime/" + name, 
-                   headers={"X-Mashape-Key": "key"})
+                               headers={"X-Mashape-Key": "key"})
         if(get_data.code == 404):
             name = re.sub('s-', '-s-', name, 1)
             print "trying " + name + "..."
             get_data = unirest.get("https://vikhyat-hummingbird-v2.p.mashape.com/anime/" + name, 
-                       headers={"X-Mashape-Key": "key"})
+                                   headers={"X-Mashape-Key": "key"})
         return get_data
 
     except Exception as err:
