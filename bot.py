@@ -99,7 +99,7 @@ def getName(mal_link):
 	return n
 
 
-#returns anime data from humminbird.me
+#returns anime data from humminbird.me 
 def getData(name):
 	try:
 		print "fetching " + name + " data..."
